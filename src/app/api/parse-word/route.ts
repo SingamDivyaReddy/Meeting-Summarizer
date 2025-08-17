@@ -17,9 +17,7 @@ export async function POST(req: NextRequest) {
     }
 
     try {
-      // Try to import mammoth (will work if library is installed)
-      
-      
+
       // Convert file to buffer
       const arrayBuffer = await file.arrayBuffer();
       const buffer = Buffer.from(arrayBuffer);
