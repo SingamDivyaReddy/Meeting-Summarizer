@@ -1,6 +1,7 @@
 // app/api/parse-word/route.ts
 
 import { NextRequest, NextResponse } from 'next/server';
+import mammoth from "mammoth";
 
 export async function POST(req: NextRequest) {
   try {
@@ -17,7 +18,7 @@ export async function POST(req: NextRequest) {
 
     try {
       // Try to import mammoth (will work if library is installed)
-      const mammoth = require('mammoth');
+      
       
       // Convert file to buffer
       const arrayBuffer = await file.arrayBuffer();
